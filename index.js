@@ -37,6 +37,7 @@ function total() {
   var costsum = 0;
   for (var t = 0; t < cart.lenth; t++ ) {
     costsum = costsum + cart[t].itemPrice;
+    console.log()
     } return costsum;
 }
 
