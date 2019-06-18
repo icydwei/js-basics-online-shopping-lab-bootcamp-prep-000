@@ -22,15 +22,14 @@ function viewCart() {
   var cartmessage = [];
   if (cart.length === 0) {
     return "Your shopping cart is empty."
-  } else for (var i = 0; i < cart.length; i++) {
-      if (i < cart.length) {
-        cartmessage.push(`${cart[i].itemName} at $${cart[i].itemPrice}`)
-      } 
-    }
-    if (cart.length > 1) {
-    var j = cart.length
-    cartmessage.push(`and ${cart[j].itemName} at $${cart[j].itemPrice}`)}
-    return `In your cart, you have ${cartmessage.join(", ")}.`
+  } 
+  for (var i = 0; i < cart.length; i++) {
+      cartmessage.push(`${cart[i].itemName} at $${cart[i].itemPrice}`)
+  } 
+  if (cart.length > 1) {
+  var j = cart.length
+  cartmessage.push(`and ${cart[j].itemName} at $${cart[j].itemPrice}`)}
+  return `In your cart, you have ${cartmessage.join(", ")}.`
 }
 
 function total() {
