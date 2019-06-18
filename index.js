@@ -23,8 +23,10 @@ function viewCart() {
   if (cart.length === 0) {
     return "Your shopping cart is empty."
   } else for (var i = 0; i < cart.length; i++) {
-      cartmessage.push(`${cart[i].itemName} at $${cart[i].itemPrice}`)
+      if (i < cart.length) {
+        cartmessage.push(`${cart[i].itemName} at $${cart[i].itemPrice}`)
       } 
+      if (i === )
       return `In your cart, you have ${cartmessage.join(", ")}.`
 }
 
