@@ -19,12 +19,13 @@ function addToCart(item) {
 }
 
 function viewCart() {
+  var cartmessage = [];
   if (cart.length === 0) {
     return "Your shopping cart is empty."
-  } else for (let i = 0; i < cart.length; i++) {
-      var cartmessage = [];
+  } else for (var i = 0; i < cart.length; i++) {
       cartmessage.push(`${cart[i].itemName} at $${cart[i].itemPrice}`)
-      } return `In your cart, you have ${cartmessage}.`
+      } 
+      return `In your cart, you have ${cartmessage}.`
 }
 
 function total() {
