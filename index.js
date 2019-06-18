@@ -34,7 +34,10 @@ function viewCart() {
 }
 
 function total() {
-  for
+  var costsum = 0;
+  for (var t = 0; t < cart.lenth; t++ ) {
+    costsum = costsum + cart[t].itemPrice;
+    } return costsum;
 }
 
 function removeFromCart(item) {
