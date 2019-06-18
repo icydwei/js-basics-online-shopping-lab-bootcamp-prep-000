@@ -28,7 +28,7 @@ function viewCart() {
       } 
     }
     if (cart.length > 1) {
-    j = cart.length
+    var j = cart.length
     cartmessage.push(`and ${cart[j].itemName} at $${cart[j].itemPrice}`)}
     return `In your cart, you have ${cartmessage.join(", ")}.`
 }
