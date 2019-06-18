@@ -25,7 +25,7 @@ function viewCart() {
   } else for (var i = 0; i < cart.length; i++) {
       cartmessage.push(`${cart[i].itemName} at $${cart[i].itemPrice}`)
       } 
-      return `In your cart, you have ${cartmessage}.`
+      return `In your cart, you have ${cartmessage.join(", ")}.`
 }
 
 function total() {
